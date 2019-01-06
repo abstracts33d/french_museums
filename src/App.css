@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -20,6 +19,19 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.mapboxgl-marker svg{
+  display: none;
+}
+.mapboxgl-marker {
+  background-image: url('./marker-museum.png');
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  /*border-radius: 50%;*/
+  /*border: 1px solid black;*/
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
