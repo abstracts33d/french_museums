@@ -1,29 +1,61 @@
 .App {
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+
+#map { height: calc(100% - 44px); width: 100%; position: absolute !important; }
+
+
+#menu {
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 10px;
+    border-radius: 3px;
+    width: 120px;
+    border: 1px solid rgba(0,0,0,0.4);
+    font-family: 'Open Sans', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#menu a {
+    font-size: 13px;
+    color: #404040;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+#menu a:last-child {
+    border: none;
+}
+
+#menu a:hover {
+    background-color: #f8f8f8;
+    color: #404040;
+}
+
+#menu a.active {
+    background-color: #3887be;
+    color: #ffffff;
+}
+
+#menu a.active:hover {
+    background: #3074a4;
+}
+
+
+.mapboxgl-popup-content{
+  max-width: 350px;
 }
 
 .mapboxgl-marker svg{
   display: none;
 }
+
 .mapboxgl-marker {
   background-image: url('./marker-museum.png');
   background-size: cover;
@@ -34,11 +66,8 @@
   cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mapboxgl-user-location-dot.mapboxgl-marker.mapboxgl-marker-anchor-center{
+   background-image: unset!important;
+     width: unset!important;
+  height: unset!important;
 }
