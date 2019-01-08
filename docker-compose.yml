@@ -5,7 +5,5 @@ services:
     ports:
       - 9000:9000
     command: sh -c "node server.js"
-    #volumes:
-    #  - ".:/app"
     environment:
       HOST: 0.0.0.0
