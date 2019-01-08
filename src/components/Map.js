@@ -26,7 +26,7 @@ class Map extends Component {
   }
 
   fetchData () {
-    axios.get(`http://localhost:9000/departements.geojson`)
+    axios.get(`https://musees-francais.theabstractconnection.com/departements.geojson`)
     .then(res => {
       console.log(res.data)
       Departements = res
@@ -37,7 +37,7 @@ class Map extends Component {
       this.setState({ regions: Departements.data});
     })
 
-    axios.get(`http://localhost:9000/regions.geojson`)
+    axios.get(`https://musees-francais.theabstractconnection.com/regions.geojson`)
     .then(res => {
       console.log(res.data)
       Regions = res
