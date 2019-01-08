@@ -14,7 +14,7 @@ class App extends Component {
               <img src="favicon.png" width="28" height="28" alt="logo"/>
             </a>
             <div className="navbar-item">
-              Musées de France
+              Musées Francais
             </div>
           </div>
         </nav>
