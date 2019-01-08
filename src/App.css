@@ -39,12 +39,16 @@
 }
 
 #menu a.active {
-    background-color: #3887be;
+    background-color: #3bb4F9;
     color: #ffffff;
 }
 
+nav.navbar{
+  background-color: #3bb2d0;
+}
+
 #menu a.active:hover {
-    background: #3074a4;
+    background: #3bb2d0;
 }
 
 
