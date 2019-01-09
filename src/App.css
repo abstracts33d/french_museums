@@ -1,7 +1,10 @@
 .App {
 }
 
-
+.navbar-brand img{
+  position: relative;
+  top: -3px;
+}
 #map { height: calc(100% - 44px); width: 100%; position: absolute !important; }
 
 
