@@ -260,7 +260,7 @@ class Map extends Component {
     if (this.state.museums.length !== 0){
       const museums = this.state.museums.features;
       museums.forEach((museum) => {
-        if ( (type ? museum.fields.nomdep === filter : museum.fields.new_regions === filter) && museum.geometry) {
+        if ( (type ? museum.fields.departement === filter : museum.fields.region === filter) && museum.geometry) {
           const popupString = `
           <div class="title is-6">
           ${museum.fields.nom_du_musee}
@@ -270,7 +270,6 @@ class Map extends Component {
           ${museum.fields.periode_ouverture ? '<p><strong>Période d\'ouverture: </strong>'+ museum.fields.periode_ouverture+'</p>' : ""}
           ${museum.fields.fermeture_annuelle ? '<p><strong>Fermeture annuelle: </strong>'+ museum.fields.fermeture_annuelle+'</p>' : ""}
           `
-
           const popup = new mapboxgl.Popup().setHTML(popupString);
           this.state.mapMarkers.push(new mapboxgl.Marker()
             .setLngLat([ museum.geometry.coordinates[0], museum.geometry.coordinates[1] ])
