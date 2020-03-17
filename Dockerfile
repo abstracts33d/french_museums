@@ -6,9 +6,9 @@ WORKDIR /app
 
 COPY package.json ./
 
-RUN yarn
+RUN npm install
 
 COPY . .
-RUN yarn run build
+RUN npm run build
 
 EXPOSE $PORT
