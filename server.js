@@ -3,7 +3,7 @@ const path = require('path');
 const compression = require('compression');
 const app = express();
 
-const PORT = process.env.port || 9000
+const PORT = process.env.PORT || 9000
 app.use(compression());
 
 app.use(express.static(path.join(__dirname, 'build')));

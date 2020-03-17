@@ -12,4 +12,3 @@ COPY . .
 RUN npm run build
 
 EXPOSE $PORT
-CMD "node server.js" --bind 0.0.0.0:$PORT wsgi
