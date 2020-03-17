@@ -11,5 +11,5 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-EXPOSE 9000
-CMD [ "node", "server.js" ]
+EXPOSE $PORT
+CMD "node server.js" --bind 0.0.0.0:$PORT wsgi
