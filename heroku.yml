@@ -7,5 +7,6 @@ build:
     HOST_USER: seed
 run:
   web:
-    command: node server.js 
+    command: 
+      - node server.js 
     image: main
