@@ -286,7 +286,7 @@ class Map extends Component {
       <div className="Map">
         <nav id="menu"/>
         <div id="map"
-        data-mapbox-api-key={process.env.REACT_APP_MAPBOX_API_KEY}
+        data-mapbox-api-key="pk.eyJ1IjoiYWJzdHJhY3RzMzNkIiwiYSI6ImNqa2M5dzNndjJucHIzcGt5ZjZsazh0dngifQ.uthLG1JRk4Ifn_lh3O7OQQ"
         />
       </div>
     );

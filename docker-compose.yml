@@ -27,7 +27,6 @@ services:
         - HOST_USER=${HOST_USER:-nodummy}
         - PROJECT_NAME=${PROJECT_NAME}
         - PORT=${PORT:-9000}
-        - REACT_APP_MAPBOX_API_KEY=${REACT_APP_MAPBOX_API_KEY} # here because needed at build time
     # Run container as a service. Replace with something useful.
     command: ["node", "server.js"]
     # Espose ports to the HOST:OTHER_CONTAINERS
