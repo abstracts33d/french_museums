@@ -31,7 +31,7 @@ class Nav extends Component {
             <a className="navbar-item" href="https://musees-francais.theabstractconnection.com">
               <img src="favicon.png" width="28" height="28" alt="logo"/>
             </a>
-            <div className="navbar-item" style={{"font-size":"20px", "font-weight":"bolder", "color":"black", "padding":0}}>
+            <div className="navbar-item" style={{"fontSize":"20px", "fontWeight":"bolder", "color":"black", "padding":0}}>
               Musées Francais
             </div>
             <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="mainNavBar">
