@@ -6,5 +6,6 @@ build:
     HOST_UID: 1000
     HOST_USER: seed
 run:
-  web: node server.js 
-  image: main
+  web:
+    cmd: node server.js 
+    image: main
