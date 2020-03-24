@@ -30,4 +30,5 @@ RUN [ "${HOST_USER}" == "root" ] || \
 USER ${HOST_USER}
 WORKDIR /home/${HOST_USER}
 COPY . .
+RUN npm install
 COPY --from=react-build /app/build /home/${HOST_USER}/build
