@@ -10,3 +10,5 @@ run:
     command: 
       - node server.js 
     image: main
+release:
+  image: main
