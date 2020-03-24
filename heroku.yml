@@ -1,14 +1,9 @@
 build:
   docker:
-    main: Dockerfile
+    web: Dockerfile
   config:
     PROJECT_NAME: french_musemums
     HOST_UID: 1000
     HOST_USER: seed
 run:
-  web:
-    command: 
-      - node server.js 
-    image: main
-release:
-  image: main
+  web: node server.js 
